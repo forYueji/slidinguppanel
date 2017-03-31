@@ -1,0 +1,21 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 25
+  buildToolsVersion "25.0.2"
+
+  lintOptions {
+    abortOnError false
+  }
+
+  defaultConfig {
+    minSdkVersion 19
+    targetSdkVersion 25
+  }
+}
+
+dependencies {
+  compile 'com.android.support:support-v4:25.2.0'
+  compile 'com.android.support:appcompat-v7:25.2.0'
+  compile project(':library')
+}
